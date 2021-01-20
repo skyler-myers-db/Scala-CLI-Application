@@ -113,7 +113,7 @@ class Cli {
     try {
       if (MovieDao.deleteMovie(Movie(titleInput))) println(s"Deleted $titleInput from movie database.")
     } catch {
-      case e: Exception => println(s"""The movie "$titleInput" does not exist.""")
+      case e: Exception => println("Failed to delete movie.")
     }
   }
 }
