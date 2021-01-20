@@ -27,3 +27,5 @@ libraryDependencies += "org.scala-lang" % "scala-compiler" % "2.13.4"
 
 // https://mvnrepository.com/artifact/org.scala-lang.modules/scala-parser-combinators
 libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.2.0-M1"
+
+scalacOptions ++= Seq("-deprecation", "-feature")
