@@ -16,7 +16,7 @@ object MovieDao {
         val conn = ConnectionUtil.getConnection
 
         Using.Manager { use =>
-            val stmt = use(conn.prepareStatement("SELECT * FROM project0.movies;"))
+            val stmt = use(conn.prepareStatement("SELECT * FROM project0.movies ORDER BY RANDOM();"))
             stmt.execute
 
             val rs = use(stmt.getResultSet)
