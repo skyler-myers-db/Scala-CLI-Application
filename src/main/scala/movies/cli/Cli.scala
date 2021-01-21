@@ -23,7 +23,8 @@ class Cli {
          )
 
     // Ways users can sort through movies
-    def cliOptions = println(
+    def cliOptions = {
+      println(
         """
         |#############################################################################################################################################
         |
@@ -40,6 +41,9 @@ class Cli {
         |Input "quit" or "exit" to leave the application.
         |------------------------------------------------""".stripMargin
         )
+
+        print(">> ")
+    }
     
     def menu: Unit = {
 
