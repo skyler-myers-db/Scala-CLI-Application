@@ -16,7 +16,7 @@ object ConnectionUtil {
       conn = DriverManager.getConnection(
         "jdbc:postgresql://localhost:5432/samyers",
         "samyers",
-        "Wootwoot1!"
+        "ADVA43#@KL#"
       )
     }
     conn
